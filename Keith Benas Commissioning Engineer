@@ -1,0 +1,366 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Critical Systems Engineering & Project Management | Keith Benas Jr.</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind to use Inter font and a custom color palette -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dc-dark': '#0F172A', // Slate 900
+                        'dc-blue': '#1E293B', // Slate 800 for cards
+                        'dc-accent': '#FFB81C', // Deep Gold Accent
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- Use Inter font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Custom scrollbar for a sleek, dark aesthetic */
+        body::-webkit-scrollbar {
+            width: 8px;
+        }
+        body::-webkit-scrollbar-track {
+            background: #0F172A;
+        }
+        body::-webkit-scrollbar-thumb {
+            background-color: #1E293B;
+            border-radius: 20px;
+            border: 2px solid #0F172A;
+        }
+    </style>
+</head>
+<body class="bg-dc-dark text-gray-100 font-sans antialiased">
+
+    <!-- Primary Navigation (Simple, fixed top) -->
+    <header class="sticky top-0 z-50 bg-dc-dark/95 backdrop-blur-sm shadow-lg border-b border-dc-blue">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+            <div class="text-xl font-bold text-dc-accent">
+                Keith Benas Jr. | Cx & Project Management
+            </div>
+            <a href="#contact" class="px-4 py-2 bg-dc-accent text-dc-dark font-semibold rounded-lg hover:bg-[#E6A619] transition duration-300 shadow-md">
+                Discuss a Project
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section class="relative pt-16 pb-24 lg:pt-32 lg:pb-40 text-center overflow-hidden">
+            <!-- Background Grid/Pattern -->
+            <div class="absolute inset-0 z-0 opacity-10" style="background-image: radial-gradient(circle, #1E293B 1px, transparent 1px); background-size: 40px 40px;"></div>
+
+            <div class="relative z-10 max-w-4xl mx-auto px-4">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6">
+                    Commissioning & Project Management for <span class="text-dc-accent block lg:inline">Hyper-Efficient Critical Facilities</span>
+                </h1>
+                <p class="text-xl sm:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto">
+                    I combine deep technical expertise in data center commissioning (**Cx**) with a proven background in **Project Leadership**, **Software Adaptation**, and **Financial Logistics** to ensure superior project delivery.
+                </p>
+
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#projects" class="inline-block px-8 py-3 bg-dc-blue text-dc-accent border border-dc-accent font-semibold rounded-xl text-lg hover:bg-dc-accent hover:text-dc-dark transition duration-300 shadow-lg">
+                        View Project Success Stories
+                    </a>
+                    <a href="#contact" class="inline-block px-8 py-3 bg-dc-accent text-dc-dark font-semibold rounded-xl text-lg hover:bg-[#E6A619] transition duration-300 shadow-lg">
+                        Schedule a Consultation
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Core Expertise Section - Focusing on Management skills -->
+        <section id="expertise" class="py-20 bg-dc-blue">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center text-white mb-12">
+                    Operational Focus: Detail, Delivery, and Software Mastery
+                </h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                    <!-- Expertise Card 1: Project Control & QA/QC -->
+                    <div class="bg-dc-dark p-6 rounded-xl shadow-2xl border-t-4 border-dc-accent transform hover:scale-[1.02] transition duration-300">
+                        <svg class="w-10 h-10 text-dc-accent mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <h3 class="text-xl font-semibold text-white mb-3">Integrated Schedule & Quality</h3>
+                        <p class="text-gray-400">Driving complex project schedules, managing manpower, and overseeing rigorous QA/QC processes across all trades for on-time, compliant project delivery.</p>
+                    </div>
+
+                    <!-- Expertise Card 2: Asset & Logistics Management -->
+                    <div class="bg-dc-dark p-6 rounded-xl shadow-2xl border-t-4 border-dc-accent transform hover:scale-[1.02] transition duration-300">
+                        <svg class="w-10 h-10 text-dc-accent mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-4-4H5a4 4 0 00-4 4v10a4 4 0 004 4h11a4 4 0 004-4v-4m-7 0l2 2m-2-2l-2-2m7 2V7a4 4 0 00-4-4H5a4 4 0 00-4 4v10a4 4 0 004 4h11a4 4 0 004-4v-4"></path></svg>
+                        <h3 class="text-xl font-semibold text-white mb-3">Critical Asset & Material Flow</h3>
+                        <p class="text-gray-400">Accountable for equipment asset management, including logistics, audits, and vendor coordination to ensure just-in-time material delivery and resource optimization.</p>
+                    </div>
+
+                    <!-- Expertise Card 3: Software & Detail Management -->
+                    <div class="bg-dc-dark p-6 rounded-xl shadow-2xl border-t-4 border-dc-accent transform hover:scale-[1.02] transition duration-300">
+                        <svg class="w-10 h-10 text-dc-accent mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-4m3 4v-4m3 4v-4m-9 8h10a2 2 0 002-2V7a2 2 0 00-2-2H9a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        <h3 class="text-xl font-semibold text-white mb-3">On-the-Job Software Adaptability</h3>
+                        <p class="text-gray-400">Proven ability to rapidly adopt and leverage platforms like SmartSheet, Peoplesoft, and AccuBid for budgeting, estimating, RFI management, and detailed financial tracking.</p>
+                    </div>
+
+                    <!-- Expertise Card 4: Communication & Financial Integrity -->
+                    <div class="bg-dc-dark p-6 rounded-xl shadow-2xl border-t-4 border-dc-accent transform hover:scale-[1.02] transition duration-300">
+                        <svg class="w-10 h-10 text-dc-accent mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c1.657 0 3 .895 3 2s-1.343 2-3 2v2m0 0l-1 1m1-1l1 1m-5 3h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        <h3 class="text-xl font-semibold text-white mb-3">Clear Communication & Oversight</h3>
+                        <p class="text-gray-400">Exceptional ability to communicate clearly across trades, manage submittals, and resolve financial discrepancies to maintain budget and documentation integrity.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Value Proposition / Trust Section (Financial Results from Resume) -->
+        <section class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="lg:grid lg:grid-cols-3 lg:gap-12 items-center">
+                    <div class="lg:col-span-2">
+                        <h2 class="text-3xl sm:text-4xl font-bold text-dc-accent mb-4">
+                            Operational Excellence: Driving Efficiency & Bottom-Line Results
+                        </h2>
+                        <p class="text-lg text-gray-300 mb-6">
+                            My management approach integrates technical validation with a six-year foundation in high-stakes supply chain and logistics, resulting in demonstrably superior project performance and fiscal control.
+                        </p>
+                        <ul class="space-y-4 text-gray-300">
+                            <li class="flex items-start">
+                                <svg class="flex-shrink-0 w-6 h-6 text-dc-accent mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                **Financial Stewardship:** Implemented proactive equipment audit and vendor coordination on a data center project, directly resulting in a **$200K+ reduction in rental expenses.**
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="flex-shrink-0 w-6 h-6 text-dc-accent mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                **Process Optimization:** Successfully optimized supply chain workflows at Emory Healthcare using Peoplesoft, achieving a sustained **98% inventory accuracy** and setting a benchmark for logistical efficiency.
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="flex-shrink-0 w-6 h-6 text-dc-accent mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                **Leadership and Growth:** Recognized leadership ability that drove operational enhancements resulting in a remarkable **67% profit increase** at the Store Manager level, demonstrating fast, strategic impact.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hidden lg:block lg:col-span-1 p-6">
+                        <!-- START: IMAGE SOURCE TO UPDATE - The photo is now correctly included. -->
+                        <img src="uploaded:Image 10-20-25 at 7.13 PM.jpg-0faf3ac6-6f41-4e7f-958b-cb3cafe0e2d0" 
+                             alt="Keith Benas Jr. Professional Photo"
+                             class="w-full h-80 object-cover rounded-xl shadow-2xl border-2 border-dc-accent" 
+                             loading="lazy"
+                             onerror="this.onerror=null; this.src='https://placehold.co/400x320/1E293B/FFB81C?text=Photo+Unavailable';"
+                        >
+                        <!-- END: IMAGE SOURCE TO UPDATE -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Certifications & Technical Proficiency Section -->
+        <section id="certifications" class="py-20 bg-dc-dark border-t border-b border-dc-blue">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center text-white mb-12">
+                    Certifications: Software Mastery & Critical Trade Proficiency
+                </h2>
+                <p class="text-xl text-gray-400 text-center mb-10 max-w-4xl mx-auto">
+                    My credentials validate my ability to seamlessly integrate project leadership, financial stewardship, and compliance, which are crucial for successful new data center development and selection.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Card 1: Project Management & Construction Tech Stack -->
+                    <div class="bg-dc-blue p-6 rounded-xl shadow-lg border-l-4 border-dc-accent">
+                        <h3 class="text-2xl font-bold text-white mb-2">Google & Procore Project Management</h3>
+                        <p class="text-gray-400 mb-4">Foundation in rigorous PM methodologies (**Google Project Management Professional Certificate**) combined with mastery of construction tech platforms like **Procore (BIM Manager, PM Core Tools)** for flawless digital project execution.</p>
+                        <span class="text-sm font-medium text-dc-accent">Key Skills: BIM, Scheduling, QA/QC, Conflict Resolution</span>
+                    </div>
+
+                    <!-- Card 2: Electrical Estimating & Technical Compliance -->
+                    <div class="bg-dc-blue p-6 rounded-xl shadow-lg border-l-4 border-dc-accent">
+                        <h3 class="text-2xl font-bold text-white mb-2">Electrical Construction & Estimating</h3>
+                        <p class="text-gray-400 mb-4">Validated technical ability in **Electrical Construction (NECA, Path to Pro)** and cost control (**Procore Estimator**), ensuring technical specifications meet financial budgets without compromise.</p>
+                        <span class="text-sm font-medium text-dc-accent">Key Skills: Procurement, Electrical Systems, Financial Detail</span>
+                    </div>
+
+                    <!-- Card 3: Cloud Context, Data & Site Safety -->
+                    <div class="bg-dc-blue p-6 rounded-xl shadow-lg border-l-4 border-dc-accent">
+                        <h3 class="text-2xl font-bold text-white mb-2">Data Integrity & Cloud Readiness</h3>
+                        <p class="text-gray-400 mb-4">Competence in data management (**Microsoft Excel**) and strategic cloud infrastructure context (**AWS Certified Cloud Practitioner Prep**), complemented by **Red Cross First Aid/CPR/AED** and **Procore Safety** compliance.</p>
+                        <span class="text-sm font-medium text-dc-accent">Key Skills: Cloud Concepts, Data Analysis, Site Safety</span>
+                    </div>
+                </div>
+
+                <div class="mt-12 text-center">
+                    <h3 class="text-xl font-semibold text-dc-accent mb-3">Professional Development Snapshot</h3>
+                    <p class="text-gray-300">
+                        Further expertise includes **Lean Six Sigma**, **Executive Leadership**, **SAP Ariba Supply Chain**, and **Financial Forecasting**—all supporting proactive, efficient, and strategic project delivery.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Key Project Experience Section -->
+        <section id="projects" class="py-20 bg-dc-blue border-b border-dc-accent/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center text-white mb-12">
+                    Key Project Experience: Data Center & Commercial Infrastructure
+                </h2>
+                <p class="text-xl text-gray-400 text-center mb-10 max-w-4xl mx-auto">
+                    Highlighting direct experience in mission-critical environments, large-scale commercial builds, and precise scope management.
+                </p>
+
+                <div class="space-y-12">
+
+                    <!-- Project 1: Hyperscale Data Center (Most Critical) -->
+                    <div class="bg-dc-dark p-8 rounded-xl shadow-2xl border-l-8 border-dc-accent border-r-8 border-dc-accent">
+                        <h3 class="text-2xl font-bold text-dc-accent mb-2 flex items-center">
+                            <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.676 0 3.195-.494 4.542-1.332M12 21v-4"></path></svg>
+                            $200 Million Hyperscale Data Center Commissioning & Logistics
+                        </h3>
+                        <p class="text-dc-accent font-semibold mb-4">Location: Atlanta, GA | Role: Project Engineer</p>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 text-dc-accent mr-3">&bull;</span>
+                                **Asset Management & Cost Control:** Directly managed all equipment and material assets across the massive **$200M project**, leading to a **hundreds of thousands of dollars in savings** by proactively off-renting underutilized equipment.
+                            </li>
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 text-dc-accent mr-3">&bull;</span>
+                                **Financial & PO Integrity:** Identified and swiftly resolved a **critical purchase order discrepancy** involving an un-documented on-site generator, ensuring compliance and preventing financial exposure.
+                            </li>
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 text-dc-accent mr-3">&bull;</span>
+                                **Vendor & Site Efficiency:** Streamlined vendor coordination, asset flow, and purchasing, while maintaining jobsite organization (Mobile Mini, small bin management) crucial for a multi-million-dollar, high-pace environment.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Project 2: High-Detail Commercial Build (Focus on Blueprint & RFI) -->
+                    <div class="bg-dc-dark p-8 rounded-xl shadow-2xl border-l-4 border-dc-accent">
+                        <h3 class="text-2xl font-bold text-white mb-2">Pepper Construction Headquarters & Commercial Fit-Outs</h3>
+                        <p class="text-dc-accent font-semibold mb-4">Location: Downtown Chicago, IL | Role: Project Engineer</p>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 text-dc-accent mr-3">&bull;</span>
+                                **Technical Blueprint Execution:** Oversaw the precise installation of downlights and linear lights across eight floors, ensuring direct and accurate implementation of detailed blueprints.
+                            </li>
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 text-dc-accent mr-3">&bull;</span>
+                                **RFI and Design Resolution:** Managed the RFI process to resolve design discrepancies and specialized lighting requirements (e.g., Fannie Mae Project branding features), maintaining project momentum.
+                            </li>
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 text-dc-accent mr-3">&bull;</span>
+                                **MEP Coordination:** Assisted in the coordination of complex MEP systems for a multi-unit hotel structure, highlighting cross-trade knowledge essential for commissioning.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Project 3: Documentation and Digital Management -->
+                    <div class="bg-dc-dark p-8 rounded-xl shadow-2xl border-l-4 border-dc-accent">
+                        <h3 class="text-2xl font-bold text-white mb-2">BOLA Project: Advanced Documentation & Estimation</h3>
+                        <p class="text-dc-accent font-semibold mb-4">Role: Project Engineer (Ongoing)</p>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 text-dc-accent mr-3">&bull;</span>
+                                **Procore & Bluebeam Mastery:** Managed all project documentation (RFIs, Submittals, blueprints) using Procore and utilized Bluebeam for detailed on-screen takeoffs, measurements, and architectural analysis for precision in room layouts, lighting placements, and exit signage.
+                            </li>
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 text-dc-accent mr-3">&bull;</span>
+                                **Pre-Construction Expertise:** Handled all bidding and takeoff processes, providing accurate material counts and data for purchasing and cost control.
+                            </li>
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 text-dc-accent mr-3">&bull;</span>
+                                **Proactive Problem Solving:** Resolved challenges arising from incomplete blueprints by maintaining clear team communication and coordinating priorities to keep the schedule on track.
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 6. Contact / CTA Section (The most important part for LinkedIn outreach) -->
+        <section id="contact" class="py-20 bg-dc-dark border-t border-dc-accent/50">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 bg-dc-blue p-8 rounded-2xl shadow-2xl">
+                <h2 class="text-3xl font-bold text-center text-dc-accent mb-4">
+                    Ready to Start Your Project?
+                </h2>
+                <p class="text-lg text-gray-300 text-center mb-8">
+                    Let's discuss how my commissioning expertise and focus on efficiency can bring your critical data center online reliably and on budget.
+                </p>
+
+                <div class="space-y-4">
+                    <p class="text-sm text-gray-400 text-center">
+                        Click below to instantly copy my professional email address:
+                    </p>
+                    <button id="copy-email-btn"
+                            data-email="keithbenas5@gmail.com"
+                            class="w-full flex items-center justify-center px-6 py-3 border-2 border-dc-accent text-dc-dark bg-dc-accent text-xl font-bold rounded-xl shadow-lg hover:bg-[#E6A619] transition duration-300 transform hover:-translate-y-0.5">
+                        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        <span id="button-text">Copy Email Address: keithbenas5@gmail.com</span>
+                    </button>
+                    <div id="copy-message" class="text-center text-sm font-medium h-4 transition-opacity duration-300 opacity-0 text-dc-accent"></div>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-gray-700 text-center">
+                    <p class="text-gray-400">
+                        Connect with me on LinkedIn for updates:
+                    </p>
+                    <a href="https://www.linkedin.com/in/keith-benas-jr/" target="_blank" class="inline-block mt-2 text-dc-accent hover:text-[#E6A619] transition duration-300">
+                        <!-- LinkedIn SVG Path (Simplified) -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 inline-block">
+                            <path d="M20.447 20.452h-3.529v-5.584c0-1.33 0-3.04-.61-4.11a3.295 3.295 0 00-2.316-1.077c-.893 0-1.424.673-1.657 1.357a4.295 4.295 0 00-.033.486v8.93h-3.53V9.18h3.38v1.45h.047a3.75 3.75 0 013.376-1.85c2.254 0 3.996 1.455 3.996 4.6v6.622zM6.6 7.82c-1.144 0-1.89 0-2.454.498a1.996 1.996 0 00-.73 1.57c0 1.05.746 1.572 2.062 1.572h.027c1.315 0 2.062-.522 2.062-1.572a1.996 1.996 0 00-.73-1.57c-.563-.498-1.31-.498-2.454-.498zM4.832 20.452H8.36V9.18H4.832v11.272z" fill="#FFB81C"/>
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm6 16h-3.53c.038-.073.076-.146.113-.22v-.002c-.037.074-.075.147-.113.22zm0-4.6c0-1.33-.217-2.67-1.12-3.722-.904-1.053-2.14-1.638-3.568-1.638H6.556v11.272H10.1v-5.584c0-1.33 0-3.04-.61-4.11a3.295 3.295 0 00-2.316-1.077c-.893 0-1.424.673-1.657 1.357a4.295 4.295 0 00-.033.486v8.93h-3.53V9.18h3.38v1.45h.047c.567-.887 1.54-1.85 3.376-1.85 2.254 0 3.996 1.455 3.996 4.6v6.622z" fill="#FFB81C"/>
+                        </svg>
+                        linkedin.com/in/keith-benas-jr/
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dc-dark border-t border-dc-blue mt-12 py-6 text-center text-sm text-gray-500">
+        &copy; 2025 Keith Benas Jr. Data Center Commissioning & Engineering.
+    </footer>
+
+    <script>
+        document.getElementById('copy-email-btn').addEventListener('click', function() {
+            const email = this.getAttribute('data-email');
+            const buttonText = document.getElementById('button-text');
+            const message = document.getElementById('copy-message');
+
+            // Use document.execCommand('copy') for better compatibility in iframe environments
+            const tempInput = document.createElement('input');
+            tempInput.value = email;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+
+            try {
+                document.execCommand('copy');
+                // Update button text and show message
+                buttonText.textContent = 'Email Copied!';
+                message.textContent = 'Paste the email address into your message.';
+                message.classList.remove('opacity-0');
+
+                // Reset button after 3 seconds
+                setTimeout(() => {
+                    buttonText.textContent = 'Copy Email Address: keithbenas5@gmail.com';
+                    message.classList.add('opacity-0');
+                }, 3000);
+            } catch (err) {
+                console.error('Could not copy text: ', err);
+                buttonText.textContent = 'Error Copying';
+                message.textContent = 'Please manually copy: ' + email;
+                message.classList.remove('opacity-0');
+            } finally {
+                document.body.removeChild(tempInput);
+            }
+        });
+    </script>
+
+</body>
+</html>
